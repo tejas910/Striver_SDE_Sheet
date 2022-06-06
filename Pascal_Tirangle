@@ -11,9 +11,9 @@ ArrayList<ArrayList<Long>> res = new ArrayList<>();
             row = new ArrayList<Long>();
             for (int j = 0; j <= i; ++j)
                 if (j == 0 || j == i)
-                    row.add(k);
+                    row.add(k); //else add 1 only at first or last
                 else
-                    row.add((Long)(pre.get(j - 1) + pre.get(j)));
+                    row.add((Long)(pre.get(j - 1) + pre.get(j))); // back and current element addition
             pre = row;
             res.add(row);
         }
