@@ -1,3 +1,5 @@
+// here we use binary search algorithm to find duplicate elemenet.
+
 import java.util.* ;
 import java.io.*; 
 import java.util.ArrayList;
