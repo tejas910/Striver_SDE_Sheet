@@ -1,0 +1,21 @@
+import java.util.* ;
+import java.io.*; 
+
+public class Solution {
+	
+	public static long maxSubarraySum(int[] arr, int n) {
+        long maxSoFar = 0;
+        long maxEndingHere = 0;
+        for (int i: arr)
+        {
+
+            maxEndingHere = maxEndingHere + i;
+            maxEndingHere = Long.max(maxEndingHere, 0);
+            maxSoFar = Long.max(maxSoFar, maxEndingHere);
+        }
+ 
+        return maxSoFar;
+
+	}
+
+}
