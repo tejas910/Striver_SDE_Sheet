@@ -1,0 +1,18 @@
+import java.util.* ;
+import java.io.*; 
+import java.util.ArrayList;
+
+public class Solution {
+	static boolean findTargetInMatrix(ArrayList<ArrayList<Integer>> mat, int m, int n, int target) {
+        boolean res = false;
+	   for (ArrayList<Integer> list : mat) {
+            for (Integer item : list) {
+                  if(item==target){
+                      res = true;
+                      break;
+                  }
+            }
+        }
+        return res;
+	}
+}
