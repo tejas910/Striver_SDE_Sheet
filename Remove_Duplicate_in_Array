@@ -1,0 +1,11 @@
+
+import java.util.*;
+public class Solution {
+	public static int removeDuplicates(ArrayList<Integer> arr,int n) {
+        Set<Integer> s = new HashSet<>();
+        for(Integer a: arr){
+            s.add(a);
+        }
+        return s.size();
+	}
+}
